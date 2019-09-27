@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
      * Declaring the view according to its view type e.g. Button , TextView , etc. ...
      * Even Layouts LinearLayout , RelativeLayouts etc.
      */
-    Button birthDay,calculation,courtCounter;
+    Button birthDay,calculation,courtCounter,recyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         birthDay = findViewById(R.id.birthday);
         calculation = findViewById(R.id.calculation);
         courtCounter = findViewById(R.id.court_counter);
+        recyclerView = findViewById(R.id.recyclerView);
 
         birthDay.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,6 +48,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent courtCounterIntent = new Intent(MainActivity.this,PointGameActivity.class);
                 startActivity(courtCounterIntent);
+            }
+        });
+
+        recyclerView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent recyclerViewIntent = new Intent(MainActivity.this,RecyclerViewActivity.class);
+                startActivity(recyclerViewIntent);
             }
         });
     }
