@@ -31,6 +31,7 @@ public class RecyclerViewActivity extends AppCompatActivity {
         userModelList.add(new UserModel(R.mipmap.ic_launcher_round,"Ranajeet","33MCA/16","8598898294"));
         userModelList.add(new UserModel(R.mipmap.ic_launcher_round,"Ranajeet","33MCA/16","8598898294"));
         userProfileAdapter = new UserProfileAdapter(userModelList,this);
+        recyclerView.setAdapter(userProfileAdapter);
 
     }
 }

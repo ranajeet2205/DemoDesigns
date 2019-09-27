@@ -9,7 +9,7 @@
     android:layout_margin="10dp"
     app:cardCornerRadius="10dp"
     style="@style/Widget.MaterialComponents.CardView"
-    android:elevation="6dp">
+    android:elevation="8dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
